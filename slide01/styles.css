@@ -1,43 +1,82 @@
+/* ==============================
+   RESET
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   BASE PAGE
+============================== */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ==============================
+   SLIDE CANVAS
+============================== */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    background-color: #ffffff;
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
+/* ==============================
+   MAIN WRAPPER
+============================== */
 .slide {
-    min-height: 100vh;
-    padding: 80px;
-    background-image: url('assets/bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 80px 100px;
+  position: relative;
 }
 
+/* ==============================
+   LOGO
+============================== */
 .logo {
-    width: 180px;
-    margin-bottom: 40px;
+  width: 220px;
+  height: auto;
+  margin-bottom: 60px;
 }
 
+/* ==============================
+   HEADINGS
+============================== */
 h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 14px;
+/* ==============================
+   CONTENT TEXT
+============================== */
+.content {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #000000;
+  max-width: 900px;
 }
 
-ul {
-    margin-left: 24px;
+.content p {
+  margin-bottom: 12px;
 }
 
-li {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 10px;
+/* ==============================
+   EMPHASIS LINE (DOT SEPARATORS)
+============================== */
+.highlight {
+  font-weight: 600;
 }
